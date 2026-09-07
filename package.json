@@ -1,0 +1,41 @@
+{
+  "name": "mcp-verify",
+  "version": "0.1.0",
+  "description": "ESLint for AI tools: The automated LLM-readiness, schema contract, and safety linter for Model Context Protocol (MCP) servers.",
+  "type": "module",
+  "bin": {
+    "mcp-verify": "./bin/mcp-verify.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/cli.ts",
+    "test": "tsx test/linter.test.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "llm",
+    "ai-agents",
+    "testing",
+    "linter",
+    "qa",
+    "anthropic",
+    "claude"
+  ],
+  "author": "Pranav H",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "ajv": "^8.17.1",
+    "commander": "^12.1.0",
+    "picocolors": "^1.1.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
