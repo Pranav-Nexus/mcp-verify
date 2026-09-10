@@ -1,6 +1,6 @@
 # mcp-verify 🛡️
 
-[![npm version](https://img.shields.io/badge/npm-v0.1.0-blue.svg)](https://www.npmjs.com/package/mcp-verify)
+[![npm version](https://img.shields.io/badge/npm-v0.1.0-blue.svg)](https://www.npmjs.com/package/@pranav-nexus/mcp-verify)
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
 [![tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](./test)
 
@@ -55,9 +55,9 @@ AI agents don't fail in production because the LLMs are dumb. They fail because:
 Run directly without installation via `npx`:
 
 ```bash
-npx mcp-verify run "node ./server.js"
+npx @pranav-nexus/mcp-verify run "node ./server.js"
 # or for Python servers:
-npx mcp-verify run "python server.py"
+npx @pranav-nexus/mcp-verify run "python server.py"
 ```
 
 ### Options
@@ -120,7 +120,7 @@ jobs:
           node-version: 20
       - run: npm ci
       - name: Run MCP Linter
-        run: npx mcp-verify run "node ./dist/index.js" --strict
+        run: npx @pranav-nexus/mcp-verify run "node ./dist/index.js" --strict
 ```
 
 ---

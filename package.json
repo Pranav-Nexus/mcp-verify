@@ -1,5 +1,5 @@
 {
-  "name": "mcp-verify",
+  "name": "@pranav-nexus/mcp-verify",
   "version": "0.1.0",
   "description": "ESLint for AI tools: The automated LLM-readiness, schema contract, and safety linter for Model Context Protocol (MCP) servers.",
   "type": "module",
@@ -8,10 +8,26 @@
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pranav-Nexus/mcp-verify.git"
+  },
+  "homepage": "https://github.com/Pranav-Nexus/mcp-verify#readme",
+  "bugs": "https://github.com/Pranav-Nexus/mcp-verify/issues",
   "scripts": {
     "build": "tsc",
     "start": "tsx src/cli.ts",
-    "test": "tsx test/linter.test.ts"
+    "test": "tsx test/linter.test.ts",
+    "prepublishOnly": "npm run build && npm test"
   },
   "keywords": [
     "mcp",
